@@ -9,7 +9,7 @@
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Bootstrap Theme</title>
+  <title>Landing Page</title>
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" id="home">
@@ -295,30 +295,7 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-  <script>
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
-
-    // init scrollspy
-    $('body').scrollspy({
-      target: '#main-nav'
-    });
-
-    // smooth scrolling
-    $('#main-nav a').on('click', function (e) {
-      if (this.hash !== "") {
-        e.preventDefault();
-
-        const hash = this.hash;
-
-        $("html, body").animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function () {
-          window.location.hash = hash;
-        });
-      }
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
